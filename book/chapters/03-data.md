@@ -1,10 +1,10 @@
 ---
-prev-chapter: "Home"
-prev-url: "https://rlhfbook.com/"
+prev-chapter: "HCI for HCLLMs"
+prev-url: "02-hci.html"
 page-title: Data for HCLLMs
 search-title: "Chapter 3: Data for HCLLMs"
 next-chapter: "NLP for HCLLMs"
-next-url: "https://rlhfbook.com/"
+next-url: "04-nlp.html"
 ---
 # Data for HCLLMs
 
@@ -37,24 +37,24 @@ particularly in pre-training, instruction tuning, and alignment
 (Figure [1](#fig:data){reference-type="ref" reference="fig:data"}).
 
 In the first subsection of this chapter, we examine the
-**(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+**([3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}) *provenance*** of data used to
 develop LLMs. We ask where this data comes from, who produced it, under
 what conditions it was produced, and how it was transformed throughout
 this process. In this way, we recognize how data encodes implicit
 values, perspectives, and cultures that shape LLM behavior. From here,
 we are positioned to understand human-centered concerns around
-**(§[\[subsec:data_representation\]](#subsec:data_representation){reference-type="ref"
+**([3.2](#subsec:data_representation){reference-type="ref"
 reference="subsec:data_representation"}) *representation and bias***,
 how the data's origins systematically skews, misrepresents, and erases
 the perspectives of underrepresented groups, leading to representational
 and allocational harms. While rich community and personal data may be
 used to mitigate some of these harms, we consider issues around
-**(§[\[subsec:data_privacy\]](#subsec:data_privacy){reference-type="ref"
+**([3.3](#subsec:data_privacy){reference-type="ref"
 reference="subsec:data_privacy"}) *consent and ownership***. Finally, we
 consider some of the biggest data challenges facing LLM developers
 today, and how proposed solutions like
-**(§[1.4](#subsec:synthetic_data){reference-type="ref"
+**([3.4](#subsec:synthetic_data){reference-type="ref"
 reference="subsec:synthetic_data"}) *synthetic data*** account or fail
 to account for the human-centered objectives we have outlined.
 
@@ -64,12 +64,12 @@ to account for the human-centered objectives we have outlined.
 []{#subsec:data_provenance label="subsec:data_provenance"}
 
 ![This chapter focuses on the human origins of data
-(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+([3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}), and how data encodes perspectives
 and values that impact HCLLM outcomes, from representation and bias
-(§[\[subsec:data_representation\]](#subsec:data_representation){reference-type="ref"
+([3.2](#subsec:data_representation){reference-type="ref"
 reference="subsec:data_representation"}) to consent and ownership
-(§[\[subsec:data_privacy\]](#subsec:data_privacy){reference-type="ref"
+([3.3](#subsec:data_privacy){reference-type="ref"
 reference="subsec:data_privacy"}). In particular, we consider
 ***pre-training data***, ***instruction-tuning data***, and ***alignment
 data***.](../assets/03_Data.png){#fig:data width="\\linewidth"}
@@ -245,7 +245,7 @@ approach, called self-instruction tuning
 range of more recent work
 [@peng2023instructiontuninggpt4; @li2023ottermultimodalmodelincontext].
 As we will discuss in
-§[1.4](#subsec:synthetic_data){reference-type="ref"
+[3.4](#subsec:synthetic_data){reference-type="ref"
 reference="subsec:synthetic_data"}, the use of synthetic data for
 self-instruction tuning complicates data provenance, and may exacerbate
 the human-centered concerns raised in this chapter.
@@ -270,7 +270,7 @@ to the format, many alignment datasets assume a Bradley--Terry model of
 pairwise human preferences. Datasets like Anthropic's HH-RLHF
 [@bai2022traininghelpfulharmlessassistant], OpenAI's InstructGPT
 [@ouyang2022training], and Peking University's PKU-SafeRLHF
-[@NEURIPS2023_4dbb61cb] couple a user prompt with a pair of model
+[@ji2025pku] couple a user prompt with a pair of model
 responses: one preferred and one dispreferred. With respect to data
 sources, many preference judgments come from a very small pool of
 annotators, sometimes within the organization itself. For example,
@@ -334,7 +334,7 @@ ethical traditions, or incorporate the voices of pluralistic user bases
 
 The story of LLM training data is a story about whose voices become
 computationally legible and whose are overwritten or erased. In
-§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+[3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}, we considered how the story of data
 is shaped by its sources, filtering decisions, annotation pipelines, and
 synthetic generation practices. Imbalances or biases in the provenance
@@ -350,7 +350,7 @@ Quality-of-service harms involve performance disparities across
 different user groups, which may cascade into both representational and
 allocational harms. For further discussion on how to define and measure
 these harms, see
-§[\[subsec:bias_eval\]](#subsec:bias_eval){reference-type="ref"
+[5.2.2](05-eval.html#subsec:bias_eval){reference-type="ref"
 reference="subsec:bias_eval"}.
 
 Sociotechnical harms become harder to diagnose when data provenance is
@@ -369,7 +369,7 @@ Quality-of-service harms are disparities in model utility for users from
 different sociodemographic groups [@shelby2023sociotechnical]. These
 disparities are often rooted in the composition and curation of data as
 discussed in
-§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+[3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}. Pre-training data scraping, quality
 filtering, instruction-tuning templates, and alignment data collection
 tend to over-represent native English speakers from wealthy, Western
@@ -473,7 +473,7 @@ histories, like filtering, deduplication, and synthetic augmentation
 With transparent data provenance, a second mitigation step is to involve
 stakeholders in the process of data creation and diversification, using
 participatory methods [@vaughn2020participatory], following
-§[\[subsub:participatory\]](#subsub:participatory){reference-type="ref"
+[2.3.2](02-hci.html#subsub:participatory){reference-type="ref"
 reference="subsub:participatory"}. With community-level organization, it
 is possible to develop rich data resources for low-resource languages
 and underrepresented communities
@@ -490,7 +490,7 @@ behavior through prompt-based
 [@hebert2024persomapersonalizedsoftprompt], retrieval-based [@lamp], or
 alignment-based methods [@ryan2025synthesizeme]. For more discussion on
 this direction, see
-§[\[subsec:personalization\]](#subsec:personalization){reference-type="ref"
+[4.4](04-nlp.html#subsec:personalization){reference-type="ref"
 reference="subsec:personalization"}.
 
 
@@ -501,7 +501,7 @@ reference="subsec:personalization"}.
 
 The data used to pre- and post-train LLMs may include sensitive personal
 information
-(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+([3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}). Such personal data may actually
 help LLM systems become more capable, useful, and proactive. For
 example, LLMs can infer from users' hidden behaviors, personal habits,
@@ -609,7 +609,7 @@ capable of identifying memorized personal information must keep up with
 LLMs' evolving capabilities
 [@staab2024memorizationviolatingprivacyinference; @2_subramani2023detecting].
 It should also be cautioned when scaling HCLLMs, as discussed in
-§[\[subsec:scaling\]](#subsec:scaling){reference-type="ref"
+[4.3](04-nlp.html#subsec:scaling){reference-type="ref"
 reference="subsec:scaling"}, that risks from memorization also increase
 with scale if repeated data are in the training stage
 [@hernandez2022scaling]. In addition, the complexities of obtaining
@@ -636,7 +636,7 @@ era of LLMs that developers, users, and policymakers can jointly share.
 
 We often lack high-quality, diverse, and privacy-compliant data
 [@almeida_2024_sdg_part1]. Filtering methods
-(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+([3.1](#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}) can filter out as much as 90% of
 raw web text data from the Common Crawl. To replace this data, synthetic
 generation is one solution employed in Nemotron-CC [@su2025nemotron] and
@@ -675,7 +675,7 @@ scores for data points based on quality and reject samples with low
 scores [@chung-etal-2023-increasing]. Label enhancement strategies could
 include human inspection and annotation of low-confidence samples. These
 techniques are described in
-[\[subsec:data_provenance_pretraining\]](#subsec:data_provenance_pretraining){reference-type="ref"
+[3.1.1](#subsec:data_provenance_pretraining){reference-type="ref"
 reference="subsec:data_provenance_pretraining"}.
 
 After curation, the generated data must be evaluated for several
@@ -696,7 +696,7 @@ preferences when real data collection proves slow or costly
 data should contain realistic social interactions between individuals
 with diverse personalities and backgrounds. This requires persona
 alignment
-(§[\[subsec:steerability\]](#subsec:steerability){reference-type="ref"
+([6.2](06-responsible.html#subsec:steerability){reference-type="ref"
 reference="subsec:steerability"}) or role-play in which the LLM portrays
 a consistent identity [@tseng2024two], possibly simulating a person from
 a particular sociodemographic background [@lutz2025prompt], or an agent

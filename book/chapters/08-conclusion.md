@@ -1,3 +1,9 @@
+---
+prev-chapter: "Case Study"
+prev-url: "07-casestudy.html"
+page-title: Conclusion
+search-title: "Chapter 8: Conclusion"
+---
 # Conclusion
 
 []{#sec:conclusion label="sec:conclusion"}

@@ -6,11 +6,11 @@
 -->
 ---
 prev-chapter: "Home"
-prev-url: "https://rlhfbook.com/"
+prev-url: "01-introduction.html"
 page-title: HCI for HCLLMs
 search-title: "Chapter 2: HCI for HCLLMs"
 next-chapter: "Chapter 3: Data"
-next-url: "https://rlhfbook.com/"
+next-url: "03-data.html"
 ---
 ::: {#hci}
 # HCI for HCLLMs
@@ -30,17 +30,17 @@ needs.
 In the first subsection of this chapter, we start by tracing how
 principles of ***human-centered design*** apply to HCLLMs and
 understanding *who* are the stakeholders for designing HCLLMs
-(§[1.1](#subsec:hci_who){reference-type="ref"
+([2.1](#subsec:hci_who){reference-type="ref"
 reference="subsec:hci_who"}). We then discuss ***design principles and
 challenges*** for creating HCLLMs in
-§[1.2](#subsec:hci_challenges){reference-type="ref"
+[2.2](#subsec:hci_challenges){reference-type="ref"
 reference="subsec:hci_challenges"}. These challenges range in scope from
 the individual level (i.e., how we can improve end-user interactions
 with these models) to the societal level (i.e., how to account for the
 diverse cultures and contexts in which these models will be deployed).
 We then discuss how HCI ***methodologies*** can be used in conjunction
 with techniques commonly used in NLP to build and evaluate HCLLMs. We
-conclude in §[1.3](#subsec:hci_methods){reference-type="ref"
+conclude in [2.3](#subsec:hci_methods){reference-type="ref"
 reference="subsec:hci_methods"} with an overview of three methodological
 orientations --- experimental methods, participatory approaches, and
 qualitative inquiry --- from HCI and discuss how they can be adopted for
@@ -50,16 +50,16 @@ HCLLMs.
 inform human-centered LLM design. The first in this process is
 understanding *who* the relevant stakeholders are --- both direct and
 indirect --- in both the development and deployment of
-HCLLMs [1.1](#subsec:hci_who){reference-type="ref"
-reference="subsec:hci_who"}. Second, we identify a set of unique
+HCLLMs ([2.1](#subsec:hci_who){reference-type="ref"
+reference="subsec:hci_who"}). Second, we identify a set of unique
 interaction challenges when it comes to designing
-HCLLMs [1.2](#subsec:hci_challenges){reference-type="ref"
-reference="subsec:hci_challenges"}. Finally, we discuss how HCI methods
+HCLLMs ([2.2](#subsec:hci_challenges){reference-type="ref"
+reference="subsec:hci_challenges"}). Finally, we discuss how HCI methods
 can be used for providing new design
-perspectives [1.3](#subsec:hci_methods){reference-type="ref"
-reference="subsec:hci_methods"}. We synthesize these points in a case
+perspectives ([2.3](#subsec:hci_methods){reference-type="ref"
+reference="subsec:hci_methods"}). We synthesize these points in a case
 study on designing LLMs for motivating physical activity in
-Sec. [1.4.1](#subsec:hci_case){reference-type="ref"
+Sec. [2.4.1](#subsec:hci_case){reference-type="ref"
 reference="subsec:hci_case"}.](../assets/02_HCI.png){#fig:hci
 width="\\linewidth"}
 
@@ -206,7 +206,7 @@ indirect stakeholders as an overwhelming checklist, HCLLM designers
 should use this complexity as motivation to identify the most
 consequential stakeholders early and involve them throughout the design
 process, rather than only including them as an afterthought
-(Sec. [1.3.2](#subsub:participatory){reference-type="ref"
+(Sec. [2.3.2](#subsub:participatory){reference-type="ref"
 reference="subsub:participatory"}).
 
 ## Defining the *What*: Principles and Challenges for Designing HCLLMs {#subsec:hci_challenges}
@@ -674,7 +674,7 @@ the following three concepts discussed in the chapter:
     redirected conversations back towards physical activity, or when
     guardrails triggered refusals for medical advice. This dynamic
     points to the design challenge of navigating human-LLM relationships
-    from Sec. [1.2](#subsec:hci_challenges){reference-type="ref"
+    from Sec. [2.2](#subsec:hci_challenges){reference-type="ref"
     reference="subsec:hci_challenges"}. Taken together, these design
     choices reflect a move beyond thinking narrowly about model
     performance toward a more holistic understanding of how users will

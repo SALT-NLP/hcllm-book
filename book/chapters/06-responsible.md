@@ -1,10 +1,10 @@
 ---
 prev-chapter: "Evaluations for HCLLMs"
-prev-url: "https://rlhfbook.com/"
-page-title: Evaluation
+prev-url: "05-eval.html"
+page-title: "Responsible HCLLMs"
 search-title: "Chapter 6: Responsible Human-Centered LLMs"
 next-chapter: "Case Study"
-next-url: "https://rlhfbook.com/"
+next-url: "07-casestudy.html"
 ---
 
 # Responsible Human-Centered LLMs
@@ -15,13 +15,13 @@ highlight three broad properties that underpin a responsible deployment
 of HCLLMs, and we explore the tensions and relationships between these
 ideals (Figure [1](#fig:responsible){reference-type="ref"
 reference="fig:responsible"}). The first property is ***interpretability
-(§[\[subsec:interpretability\]](#subsec:interpretability){reference-type="ref"
+([6.1](#subsec:interpretability){reference-type="ref"
 reference="subsec:interpretability"})***: an HCLLM's input-output
 transformations should be understood. This property is first, since it
 complements our next two properties, ***steerability
-(§[\[subsec:steerability\]](#subsec:steerability){reference-type="ref"
+([6.2](#subsec:steerability){reference-type="ref"
 reference="subsec:steerability"})*** and ***safety
-(§[1.3](#subsec:safety){reference-type="ref"
+([6.3](#subsec:safety){reference-type="ref"
 reference="subsec:safety"})***. Steerable models can be aligned along a
 pre-selected dimension, and safe models do not produce undesirable
 outputs. If we have an interpretable model, we may obtain a more
@@ -45,11 +45,11 @@ research.
 
 ![We enumerate three properties for the responsible HCLLM deployment:
 ***interpretability
-(§[\[subsec:interpretability\]](#subsec:interpretability){reference-type="ref"
+([6.1](#subsec:interpretability){reference-type="ref"
 reference="subsec:interpretability"})***, ***steerability
-(§[\[subsec:steerability\]](#subsec:steerability){reference-type="ref"
+([6.2](#subsec:steerability){reference-type="ref"
 reference="subsec:steerability"})***, and ***safety
-(§[1.3](#subsec:safety){reference-type="ref"
+([6.3](#subsec:safety){reference-type="ref"
 reference="subsec:safety"})***. These properties are generally
 complementary, but tensions between them can make deployment
 difficult.](../assets/sec6.png){#fig:responsible width="\\linewidth"}
@@ -266,7 +266,7 @@ behavior [@li2024agentalignmentevolvingsocial]. A user's preferences can
 be derived from explicit feedback, as in pairwise preference datasets,
 or from implicit feedback like historical interaction data. For more
 in-depth discussion of personalization methods, see
-§[\[subsec:personalization\]](#subsec:personalization){reference-type="ref"
+[4.4](04-nlp.html#subsec:personalization){reference-type="ref"
 reference="subsec:personalization"}.
 
 Related to personalization is **persona alignment** or role play. Here,
@@ -285,7 +285,7 @@ this target as **linguistic alignment**. This form of steerability is
 critical for equitable access, as models trained predominantly on
 high-resource, standardized corpora often underperform for marginalized
 linguistic communities (see
-§[\[subsec:data_representation\]](#subsec:data_representation){reference-type="ref"
+[3.2](03-data.html#subsec:data_representation){reference-type="ref"
 reference="subsec:data_representation"}). Finally, **cultural
 alignment** means that models can be steered to reflect the norms,
 values, and narratives of particular communities or demographic groups
@@ -308,9 +308,9 @@ narratives are underrepresented or stereotyped in the training corpus,
 then prompt-based steering may have limited expressive range. In this
 sense, steerability is not just a matter of control at inference time,
 but is rooted much earlier in data provenance
-(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+([3.1](03-data.html#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}) and evaluation
-(§[\[sec:evaluation\]](#sec:evaluation){reference-type="ref"
+([\[sec:evaluation\]](#sec:evaluation){reference-type="ref"
 reference="sec:evaluation"}). Steerability starts with measuring where
 biases arise, localizing their sources in the data pipeline, and
 redesigning collection and annotation practices accordingly.
@@ -358,7 +358,7 @@ challenge to achieve localized, domain-specific alignment processes that
 enable communities and stakeholders to meaningfully shape model behavior
 [@delgado2023participatory]. Methodologically, we have the participatory
 HCI approaches covered in
-§[\[subsub:participatory\]](#subsub:participatory){reference-type="ref"
+[2.3.2](02-hci.html#subsub:participatory){reference-type="ref"
 reference="subsub:participatory"}. However, politically, most model
 developers lack incentives to share control with communities
 [@gabriel2020artificial]. Current alignment pipelines are centralized by
@@ -389,9 +389,9 @@ and challenges of accountability. Open and community-led efforts may
 broaden participation, but they must still grapple with questions of
 safety, quality control, and transparent maintenance of HCLLMs. In the
 following sections, we will discuss safety
-(§[1.3](#subsec:safety){reference-type="ref" reference="subsec:safety"})
+([6.3](#subsec:safety){reference-type="ref" reference="subsec:safety"})
 and interpretability
-(§[\[subsec:interpretability\]](#subsec:interpretability){reference-type="ref"
+([6.1](#subsec:interpretability){reference-type="ref"
 reference="subsec:interpretability"}), as well as the tensions between
 these objectives.
 
@@ -399,7 +399,7 @@ these objectives.
 
 The third dimension we emphasize when building responsible HCLLMs is
 **safety**. As defined in
-§[\[subsec:safety_eval\]](#subsec:safety_eval){reference-type="ref"
+[5.2.3](05-eval.html#subsec:safety_eval){reference-type="ref"
 reference="subsec:safety_eval"}, safety is conceptualized as preventing
 LLMs from producing undesirable outputs (i.e., those that may be toxic,
 harmful, discriminatory, or dangerous), even when prompted to do so. For
@@ -439,7 +439,7 @@ security
 vulnerabilities [@openai2025_gpt5_bio_bug_bounty; @anthropic2025_model_safety_bug_bounty].
 In addition to red-teaming efforts, model developers make use of
 benchmarks and other safety evaluations, which we discuss in detail in
-§[\[subsec:safety_eval\]](#subsec:safety_eval){reference-type="ref"
+[5.2.3](05-eval.html#subsec:safety_eval){reference-type="ref"
 reference="subsec:safety_eval"}.
 
 Mitigations can appear at various stages of the model development
@@ -460,8 +460,8 @@ process. For instance, Constitutional AI allows researchers to
 pre-determine a set of ethical principles for the model to adhere
 to [@bai2022constitutional]. Instruction-tuning methods can also reduce
 toxicity (see
-§[\[subsubsec:succeses_instruction_tuning\]](#subsubsec:succeses_instruction_tuning){reference-type="ref"
-reference="subsubsec:succeses_instruction_tuning"}). Once deployed,
+[4.1](04-nlp.html#subsec:instruction_tuning){reference-type="ref"
+reference="subsec:instruction_tuning"}). Once deployed,
 guardrail models are used to help moderate both user inputs and
 generated outputs [@inan2023llama; @dong2024building; @rebedea2023nemo].
 
@@ -487,7 +487,7 @@ psychological states and behaviors [@cheng2025sycophantic]. An open
 challenge lies in measuring these long-term interaction harms, as they
 are difficult to capture with standard evaluation practices like
 benchmarking. One alternative approach, as discussed in
-§[\[sec:hci\]](#sec:hci){reference-type="ref" reference="sec:hci"}, can
+[\[sec:hci\]](#sec:hci){reference-type="ref" reference="sec:hci"}, can
 be to run controlled experiments to understand the effect of model
 properties on users [@cheng2025sycophantic; @kirk2025neural] or to
 conduct qualitative inquiry [@mathur2025sometimes]. However, this

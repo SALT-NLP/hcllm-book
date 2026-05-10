@@ -1,10 +1,10 @@
 ---
 prev-chapter: "Responsible HCLLMs"
-prev-url: "https://rlhfbook.com/"
+prev-url: "06-responsible.html"
 page-title: HCLLMs and the Future of Work
 search-title: "Chapter 7:  HCLLMs and the Future of Work"
 next-chapter: "Conclusion"
-next-url: "https://rlhfbook.com/"
+next-url: "08-conclusion.html"
 ---
 # Case Study: HCLLMs and the Future of Work
 
@@ -41,13 +41,13 @@ developers can incorporate the human-centered principles from previous
 sections to define, develop, and deploy HCLLMs within this evolving
 ecosystem. To define HCLLMs here, we will first discuss *who* the
 stakeholders are and how to account for these differing parties in
-§[1.1](#subsub:stakeholders_future_of_work){reference-type="ref"
+[7.1](#subsub:stakeholders_future_of_work){reference-type="ref"
 reference="subsub:stakeholders_future_of_work"}. Then, we will cover
 HCLLM development, how we ought to be training and evaluating models for
 future of work purposes in
-§[1.2](#subsub:evaluating_future_of_work){reference-type="ref"
+[7.2](#subsub:evaluating_future_of_work){reference-type="ref"
 reference="subsub:evaluating_future_of_work"}. Finally, in
-§[1.3](#subsub:case_deploy){reference-type="ref"
+[7.3](#subsub:case_deploy){reference-type="ref"
 reference="subsub:case_deploy"}, we conclude with considerations for
 responsibly deploying HCLLMs, such as the potential for widening
 inequalities or overreliance. The road map is visualized in
@@ -57,13 +57,13 @@ reference="fig:future_of_work"}.
 ![We present a case study on HCLLMs and the future of work, covering the
 three key areas of defining, developing, and deploying HCLLMs. We start
 by identifying relevant stakeholders
-([1.1](#subsub:stakeholders_future_of_work){reference-type="ref"
+([7.1](#subsub:stakeholders_future_of_work){reference-type="ref"
 reference="subsub:stakeholders_future_of_work"}), then move to examining
 the model capabilities needed to better suit LLMs for workplace settings
-([1.2](#subsub:evaluating_future_of_work){reference-type="ref"
+([7.2](#subsub:evaluating_future_of_work){reference-type="ref"
 reference="subsub:evaluating_future_of_work"}), and conclude by
 discussing key societal considerations
-([1.3](#subsub:case_deploy){reference-type="ref"
+([7.3](#subsub:case_deploy){reference-type="ref"
 reference="subsub:case_deploy"}).](../assets/CaseStudy.png){#fig:future_of_work
 width="\\linewidth"}
 
@@ -336,7 +336,7 @@ area [@messeri2024artificial; @shen2026ai; @macnamara2024does].
 
 These concerns highlight the importance of carefully designing how
 humans collaborate with LLMs, as discussed in
-§[1.2](#subsub:evaluating_future_of_work){reference-type="ref"
+[7.2](#subsub:evaluating_future_of_work){reference-type="ref"
 reference="subsub:evaluating_future_of_work"}. For example, the risk of
 deskilling can be included as a factor when considering how to delegate
 tasks. In this vein, rather than framing LLMs as tools that automate
@@ -365,7 +365,7 @@ Addressing this divide requires interventions at multiple levels. For
 one, as open-source models grow more capable, this can help reduce
 barriers to entry and broaden who is able to benefit from AI assistance.
 However, access alone is insufficient. As discussed in
-§[\[subsec:bias_eval\]](#subsec:bias_eval){reference-type="ref"
+[5.2.2](05-eval.html#subsec:bias_eval){reference-type="ref"
 reference="subsec:bias_eval"}, model performance and usability can vary
 across social groups, meaning that some populations may benefit less
 from interacting with LLMs even when they are

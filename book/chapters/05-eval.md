@@ -1,10 +1,10 @@
 ---
 prev-chapter: "NLP for HCLLMs"
-prev-url: "https://rlhfbook.com/"
+prev-url: "04-nlp.html"
 page-title: Evaluations for HCLLMs
 search-title: "Chapter 5: Evaluations for HCLLMs"
 next-chapter: "Responsible Human-Centered LLMs"
-next-url: "https://rlhfbook.com/"
+next-url: "06-responsible.html"
 ---
 # Evaluation
 
@@ -36,33 +36,33 @@ human-centered evaluation, spanning three levels as shown in
 Figure [1](#fig:evaluation){reference-type="ref"
 reference="fig:evaluation"}. First, we consider evaluations at the level
 of model outputs
-(§[\[subsec:model_level_eval\]](#subsec:model_level_eval){reference-type="ref"
+([5.1](#subsec:model_level_eval){reference-type="ref"
 reference="subsec:model_level_eval"}), using both quantitative metrics
-(§[1.1.2](#subsub:quantitative_methods){reference-type="ref"
+([5.1.2](#subsub:quantitative_methods){reference-type="ref"
 reference="subsub:quantitative_methods"}) and qualitative evaluations
-(§[1.1.3](#subsub:qualitative_evaluation){reference-type="ref"
+([5.1.3](#subsub:qualitative_evaluation){reference-type="ref"
 reference="subsub:qualitative_evaluation"}). Beyond raw outputs, we also
 consider how people experience LLMs
-(§[\[subsec:human_centered_eval\]](#subsec:human_centered_eval){reference-type="ref"
+([5.2](#subsec:human_centered_eval){reference-type="ref"
 reference="subsec:human_centered_eval"}), considering human values
-(§[1.2.1](#subsub:human_values){reference-type="ref"
+([5.2.1](#subsub:human_values){reference-type="ref"
 reference="subsub:human_values"}), as well as concerns over bias
-(§[\[subsec:bias_eval\]](#subsec:bias_eval){reference-type="ref"
+([5.2.2](#subsec:bias_eval){reference-type="ref"
 reference="subsec:bias_eval"}) and safety
-(§[\[subsec:safety_eval\]](#subsec:safety_eval){reference-type="ref"
+([5.2.3](#subsec:safety_eval){reference-type="ref"
 reference="subsec:safety_eval"}). Lastly, we discuss extrinsic
 evaluations at the societal level
-(§[\[subsec:impact\]](#subsec:impact){reference-type="ref"
+([5.3](#subsec:impact){reference-type="ref"
 reference="subsec:impact"}), measuring the system's real world impact.
 
 ![In this chapter, we discuss common pitfalls and best practices for
 evaluating HCLLMs, considering three distinct levels of evaluation: the
 model level
-(§[\[subsec:model_level_eval\]](#subsec:model_level_eval){reference-type="ref"
+([5.1](#subsec:model_level_eval){reference-type="ref"
 reference="subsec:model_level_eval"}), the human level
-(§[\[subsec:human_centered_eval\]](#subsec:human_centered_eval){reference-type="ref"
+([5.2](#subsec:human_centered_eval){reference-type="ref"
 reference="subsec:human_centered_eval"}), and the societal level
-(§[\[subsec:impact\]](#subsec:impact){reference-type="ref"
+([5.3](#subsec:impact){reference-type="ref"
 reference="subsec:impact"}).](../assets/sec5.png){#fig:evaluation
 width="\\linewidth"}
 
@@ -235,7 +235,7 @@ different groups of people worldwide
 ### Qualitative Evaluation {#subsub:qualitative_evaluation}
 
 In contrast to quantitative evaluations
-(§[1.1.2](#subsub:quantitative_methods){reference-type="ref"
+([5.1.2](#subsub:quantitative_methods){reference-type="ref"
 reference="subsub:quantitative_methods"}), qualitative evaluations
 require a nuanced approach to evaluation as they work directly with
 humans (or LLMs). They are perhaps more human-centered than automatic or
@@ -322,7 +322,7 @@ human-centered LLMs. Such limitations in current mainstream human
 evaluation techniques makes one wonder; how do current human evaluations
 fit into human-centered evaluation paradigm? It is vital that
 human-centered evaluation of language models follow the needs of human
-stakeholders i.e. end-users. Any attempt to short-cut such process would
+stakeholders (e.g., end-users). Any attempt to short-cut such process would
 result in inadequate task designs that serve the designer of the tasks,
 nothing more. Who the stakeholders of the tasks are is then interesting
 question; for example, for a paper review generation task, the
@@ -339,11 +339,11 @@ Unlike model-level evaluations, which focus on what the system produces,
 human-level evaluations focus on how people experience the HCLLM
 [@Chang2023LLMEvaluationSurvey; @parmanto2024development]. We focus
 particularly on human values
-(§[1.2.1](#subsub:human_values){reference-type="ref"
+([5.2.1](#subsub:human_values){reference-type="ref"
 reference="subsub:human_values"}), bias
-(§[\[subsec:bias_eval\]](#subsec:bias_eval){reference-type="ref"
+([5.2.2](#subsec:bias_eval){reference-type="ref"
 reference="subsec:bias_eval"}), and safety
-(§[\[subsec:safety_eval\]](#subsec:safety_eval){reference-type="ref"
+([5.2.3](#subsec:safety_eval){reference-type="ref"
 reference="subsec:safety_eval"}).
 
 ### Human Values {#subsub:human_values}
@@ -619,7 +619,7 @@ effective under typical conditions, they may not be sufficient to
 anticipate or mitigate every possible misuse scenario. The importance of
 robust safety evaluations is further underscored by concerns surrounding
 data privacy and copyright discussed in
-§[\[subsec:data_privacy\]](#subsec:data_privacy){reference-type="ref"
+[3.3](03-data.html#subsec:data_privacy){reference-type="ref"
 reference="subsec:data_privacy"}.
 
 #### Datasets for Safety Evaluation.
@@ -805,7 +805,7 @@ performance disparities, privacy protection, financial implications,
 environmental costs, and content moderation labor
 [@solaiman2023evaluating].
 
-As mentioned in §[\[sec:hci\]](#sec:hci){reference-type="ref"
+As mentioned in [\[sec:hci\]](#sec:hci){reference-type="ref"
 reference="sec:hci"}, randomized controlled trials (RCTs) and
 large-scale behavioral assessments play a big role in understanding and
 evaluating LLMs' behavioral impact on users and society. For instance,
@@ -878,7 +878,7 @@ surveys.
 *Short-term and Long-term evaluation:* Evaluations can be split into
 short-term and long-term [@yang2024socialskilltraininglarge] with
 short-term being constrained interactive sessions and long-term being
-much longer studies (i.e. 1 week). In short-term evaluations, new AI
+much longer studies. In short-term evaluations, new AI
 tools may receive subjectively higher scores due to novelty
 bias. [@Sadeghi02102022; @ShinBeyondNovelty]. This is less of an issue
 with long-term evaluations. For example, we can consider one
@@ -904,8 +904,7 @@ human-centered in the long run. We risk measuring the novelty bias if we
 only perform short-term evaluations, in which LLM's helpfulness to
 humans can be inflated. By measuring the long-term effect of LLMs, we
 will be able to accurately measure the helpfulness of LLMs, among other
-important human-centered metrics for the LLMs' use-case (i.e.
-creativity).
+important human-centered metrics for the LLMs' use-case (e.g., creativity).
 
 In summary, well-rounded extrinsic evaluation should integrate objective
 performance and subjective user experience. But while extrinsic

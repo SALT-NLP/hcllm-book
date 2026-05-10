@@ -1,10 +1,10 @@
 ---
 prev-chapter: "Data for HCLLMs"
-prev-url: "https://rlhfbook.com/"
+prev-url: "03-data.html"
 page-title: NLP for HCLLMs
 search-title: "Chapter 4: NLP for HCLLMs"
 next-chapter: "Evaluations"
-next-url: "https://rlhfbook.com/"
+next-url: "05-eval.html"
 ---
 
 ::: {#nlp}
@@ -28,37 +28,37 @@ pre-training practices in
 and will focus on ***post-training techniques*** in this chapter.
 Although post-training recipes differ across models, two core components
 include a supervised fine-tuning (SFT) stage
-(§[\[subsec:instruction_tuning\]](#subsec:instruction_tuning){reference-type="ref"
+([4.1](#subsec:instruction_tuning){reference-type="ref"
 reference="subsec:instruction_tuning"}) and a reinforcement learning
 stage that incorporates human preferences
-(§[\[subsec:preference_tuning\]](#subsec:preference_tuning){reference-type="ref"
+([4.2](#subsec:preference_tuning){reference-type="ref"
 reference="subsec:preference_tuning"}). We next discuss how the
 predominant paradigm of scaling applies to human-centered objectives
-(§[\[subsec:scaling\]](#subsec:scaling){reference-type="ref"
+([4.3](#subsec:scaling){reference-type="ref"
 reference="subsec:scaling"}). Finally, we conclude by discussing three
 currently open challenges and future research directions for HCLLMs,
 covering ***personalization
-(§[1.4](#subsec:personalization){reference-type="ref"
+([4.4](#subsec:personalization){reference-type="ref"
 reference="subsec:personalization"}), pluralistic alignment
-(§[1.5](#subsec:pluralism){reference-type="ref"
+([4.5](#subsec:pluralism){reference-type="ref"
 reference="subsec:pluralism"}), and multilinguality
-(§[1.6](#subsec:multilinguality){reference-type="ref"
+([4.6](#subsec:multilinguality){reference-type="ref"
 reference="subsec:multilinguality"})***. For a roadmap, see
 Figure [1](#fig:nlp){reference-type="ref" reference="fig:nlp"}.
 
 ![This chapter applies human-centered considerations to ***existing
 post-training techniques*** like SFT and RLHF
-(§[\[subsec:instruction_tuning\]](#subsec:instruction_tuning){reference-type="ref"
-reference="subsec:instruction_tuning"}-[\[subsec:preference_tuning\]](#subsec:preference_tuning){reference-type="ref"
+([4.1](#subsec:instruction_tuning){reference-type="ref"
+reference="subsec:instruction_tuning"}-[4.2](#subsec:preference_tuning){reference-type="ref"
 reference="subsec:preference_tuning"}), and explores the limitations of
 ***scaling for human-centered outcomes***
-(§[\[subsec:scaling\]](#subsec:scaling){reference-type="ref"
+([4.3](#subsec:scaling){reference-type="ref"
 reference="subsec:scaling"}). Finally, we cover open challenges in
-***personalization (§[1.4](#subsec:personalization){reference-type="ref"
+***personalization ([4.4](#subsec:personalization){reference-type="ref"
 reference="subsec:personalization"}), pluralistic alignment
-(§[1.5](#subsec:pluralism){reference-type="ref"
+([4.5](#subsec:pluralism){reference-type="ref"
 reference="subsec:pluralism"}), and multilinguality
-(§[1.6](#subsec:multilinguality){reference-type="ref"
+([4.6](#subsec:multilinguality){reference-type="ref"
 reference="subsec:multilinguality"})***.](../assets/04_NLP.png){#fig:nlp
 width="\\linewidth"}
 
@@ -143,7 +143,7 @@ accuracy is critical.
 
 A second tension with instruction tuning relates to *safety* concerns,
 which we discuss in more detail in
-§[\[subsec:safety_eval\]](#subsec:safety_eval){reference-type="ref"
+[5.2.3](05-eval.html#subsec:safety_eval){reference-type="ref"
 reference="subsec:safety_eval"}. Since instruction-tuned models are
 trained to comply with the provided prompt, instruction tuning can make
 models more susceptible to backdoor or poisoning attacks that embed
@@ -167,7 +167,7 @@ remains a core design tension.
 What are the next frontiers for instruction tuning? A recurring theme
 when discussing tensions in instruction tuning is the role that data
 plays. As mentioned in
-§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+[3.1](03-data.html#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"}, ensuring dataset diversity may be
 crucial for avoiding biases and enhancing generalization across varied
 tasks. To tackle this question, we can think about diversifying
@@ -212,7 +212,7 @@ instruction data can be particularly valuable in low-resource settings,
 enabling more data-efficient fine-tuning [@pengpun2024seed]. However,
 synthetic data generation also poses new challenges, exacerbating
 tensions discussed in
-§ [1.1.2](#subsubsec:challenges_instruction_tuning){reference-type="ref"
+[4.1.2](#subsubsec:challenges_instruction_tuning){reference-type="ref"
 reference="subsubsec:challenges_instruction_tuning"}. Models trained on
 synthetic instructions may overfit to specific patterns present in the
 generated data, and despite claims of increased diversity, synthetic
@@ -424,9 +424,9 @@ Although scaling improves the overall performance of LLMs, it does not
 proportionally improve performance at the same rate for all
 subpopulations and human-centered knowledge domains. Representational
 biases in training data
-(§[\[subsec:data_provenance\]](#subsec:data_provenance){reference-type="ref"
+([3.1](03-data.html#subsec:data_provenance){reference-type="ref"
 reference="subsec:data_provenance"} and
-§[\[subsec:data_representation\]](#subsec:data_representation){reference-type="ref"
+[3.2](03-data.html#subsec:data_representation){reference-type="ref"
 reference="subsec:data_representation"}) can lead to disparities in
 scaling [@rolf2021representation]. However, data is not the only cause
 of relative disparities in scaling, and may not even be the principal
@@ -502,7 +502,7 @@ risks. @hernandez2022scaling demonstrate that an 800M parameter model
 could be degraded to that of a 400M model by repeating just 0.1% of the
 training data 100 times, suggesting that larger models aren't
 automatically more robust to certain types of data-based attacks (see
-§[\[subsec:data_privacy\]](#subsec:data_privacy){reference-type="ref"
+[3.3](03-data.html#subsec:data_privacy){reference-type="ref"
 reference="subsec:data_privacy"}).
 
 In regards to emulating human values, @biedma2024beyond showed that as

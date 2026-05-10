@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "bd9698f47121",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 9,
+  "files_touched": [
+    "book/chapters/02-hci.md",
+    "book/chapters/03-data.md",
+    "book/chapters/04-nlp.md",
+    "book/chapters/05-eval.md",
+    "book/chapters/06-responsible.md",
+    "book/chapters/07-casestudy.md",
+    "book/chapters/08-conclusion.md",
+    "book/chapters/bib.bib"
+  ],
+  "sessions": [
+    {
+      "metadata": "/bd/9698f47121/0/metadata.json",
+      "transcript": "/bd/9698f47121/0/full.jsonl",
+      "content_hash": "/bd/9698f47121/0/content_hash.txt",
+      "prompt": "/bd/9698f47121/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 155,
+    "cache_creation_tokens": 404273,
+    "cache_read_tokens": 12347039,
+    "output_tokens": 68200,
+    "api_call_count": 90
+  }
+}

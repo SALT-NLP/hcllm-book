@@ -1,0 +1,41 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "bd9698f47121",
+  "session_id": "478d648c-b0bd-48d8-a5a9-0eeb245be691",
+  "strategy": "manual-commit",
+  "created_at": "2026-05-10T06:34:14.525107Z",
+  "branch": "main",
+  "checkpoints_count": 9,
+  "files_touched": [
+    "book/chapters/02-hci.md",
+    "book/chapters/03-data.md",
+    "book/chapters/04-nlp.md",
+    "book/chapters/05-eval.md",
+    "book/chapters/06-responsible.md",
+    "book/chapters/07-casestudy.md",
+    "book/chapters/08-conclusion.md",
+    "book/chapters/bib.bib"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-7[1m]",
+  "turn_id": "712910c82195",
+  "token_usage": {
+    "input_tokens": 155,
+    "cache_creation_tokens": 404273,
+    "cache_read_tokens": 12347039,
+    "output_tokens": 68200,
+    "api_call_count": 90
+  },
+  "session_metrics": {
+    "turn_count": 13
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-05-10T06:34:14.178673Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 85,
+    "human_removed": 3059,
+    "total_committed": 41,
+    "agent_percentage": 0
+  }
+}

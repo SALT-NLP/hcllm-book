@@ -1,0 +1,49 @@
+In @book/chapters/01-introduction.md how do we cite @book/assets/01_Intro.png in the file
+
+---
+
+the images are not rendering
+
+---
+
+In @book/chapters/01-introduction.md update the lihnk to [HCI] based on the instructions in @book/README.md on linking between chapters
+
+---
+
+No the link does not work AND we do not want to change the names in the text
+
+---
+
+when you click the link nothing happens
+
+---
+
+Update the subsec references in @book/chapters/03-data.md to match those in @book/chapters/02-hci.md
+
+---
+
+Just provide the list and the style and I will go in and update
+
+---
+
+for personalization it should be 04-nlp.html. the rest look good, update them
+
+---
+
+Update subections in @book/chapters/04-nlp.md
+
+---
+
+Update subsection references in @05-eval.md
+
+---
+
+Update subsection references in @06-responsible.md
+
+---
+
+2
+
+---
+
+Update subsection references in @07-casestudy.md

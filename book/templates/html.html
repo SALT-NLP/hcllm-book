@@ -12,13 +12,13 @@
   <meta property="og:image:height" content="1080" />
 
   <!-- <meta property="og:title" content="$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$" /> -->
-  <meta property="og:title" content="RLHF Book by Nathan Lambert" />
-  <meta property="og:description" content="The Reinforcement Learning from Human Feedback Book" />
+  <meta property="og:title" content="Human-Centered LLMs" />
+  <meta property="og:description" content="Reflections and New Directions for Human-Centered Large Language Models" />
   <meta property="og:url" content="https://rlhfbook.com" />
 
-  $for(author-meta)$
+  <!-- $for(author-meta)$
   <meta name="author" content="$author-meta$" />
-$endfor$
+$endfor$ -->
 $if(date-meta)$
   <meta name="dcterms.date" content="$date-meta$" />
 $endif$
@@ -28,7 +28,7 @@ $endif$
   <!-- <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title> -->
    <!-- SEO and Open Graph titles -->
   <title>
-    RLHF Book by Nathan Lambert
+    Human-Centered LLMs
   </title>
 
   <style>
@@ -115,48 +115,37 @@ $if(abstract)$
 $endif$
 </header>
 $endif$
-  <section id="changelog" style="padding: 0 20px;">
-    <h3>Changelog</h3>
-    <p><em>Last built: $date$</em></p>
-    <p><strong>February 2026</strong>: v2 content: direct alignment chapter, new diagrams, RL cheatsheet, appendices, search bar, Kindle support, editor fixes.</p>
-    <p><strong>January 2026</strong>: Major chapter reorganization to match Manning book structure; code examples library; old URLs redirect to new locations.</p>
-    <p><strong>December 2025</strong>: Working on v2 of the book based on editors feedback! Do check back for updates!</p>
-    <p><strong>November 2025</strong>: <a href="https://www.manning.com/books/the-rlhf-book">Manning preorder</a> available.</p>
-    <p><strong>July 2025</strong>: Add tool use chapter (see <a href="https://github.com/natolambert/rlhf-book/pull/122">PR</a>)</p>
-    <p><strong>June 2025</strong>: v1.1. Lots of RLVR/reasoning improvements (see <a href="https://github.com/natolambert/rlhf-book/pull/120">PR</a>)</p>
-    <p><strong>April 2025</strong>: Finish v0; overoptimization, open questions, etc.; evaluation section; RLHF x Product research, improving website, reasoning section.</p>
-    <p><strong>March 2025</strong>: Improving policy gradient section; finish DPO, major cleaning; start DPO chapter, improve intro.</p>
-    <p><strong>February 2025</strong>: Improve SEO, add IFT chapter; RM additions, preference data, policy gradient finalization; PPO and GAE; added changelog, revamped introduction.</p>
-  </section>
   <section id="acknowledgements" style="padding: 20px;">
     <h3>Acknowledgements</h3>
-    <p>I would like to thank the following people who helped me directly with this project: Costa Huang, (and of course Claude). Indirect shout-outs go to Ross Taylor, Hamish Ivison, John Schulman, Valentina Pyatkin, Daniel Han, Shane Gu, Joanne Jang, LJ Miranda, and others in my RL sphere.</p>
-    <p>Additionally, thank you to the <a href="https://github.com/natolambert/rlhf-book/graphs/contributors">contributors on GitHub</a> who helped improve this project.</p>
+    <p>The idea for this manuscript originated in the Fall 2024 offering of Stanford's CS 329X course on HCLLMs, taught by the instructor Diyi Yang and assistants Rose E. Wang and Caleb Ziems. Diyi Yang developed the initial structure and outline of the paper. The enrolled students collaborated on a first draft of the manuscript as part of their coursework, with each student pair assigned responsibility for drafting a subsection of the survey according to the course assignment structure. The teaching assistants subsequently reviewed, graded, and provided feedback on these drafts. In Winter 2025, a subset of students continued to revise and expand the manuscript under the primary direction of Rose E. Wang and the secondary direction of Caleb Ziems.</p>
+
+    <p>Caleb Ziems and Dora Zhao largely re-wrote and restructured the
+    manuscript, with significant conceptual revisions and new chapters, to produce the current version. This revision phase was supported by
+    additional contributions from Sunny Yu and Advit Deepak. All authors
+    reviewed and approved the final manuscript.</p>
+
+    <p>For the full list of contributors, please see the <a href="contributors.html" style="color: #888; text-decoration: none;">contributors page</a>.</p>
   </section>
   <section id="citation" style="padding: 0 20px;">
     <h3>Citation</h3>
     <p>If you found this useful for your research, please cite it!</p>
     <pre style="text-align: left; font-size: small; color: #888;">@book{rlhf2026lambert,
-  author = {Nathan Lambert},
-  title = {Reinforcement Learning from Human Feedback},
-  year = {2026},
-  publisher = {Online},
-  url = {https://rlhfbook.com}
-}</pre>
+      author = {Nathan Lambert},
+      title = {Reinforcement Learning from Human Feedback},
+      year = {2026},
+      publisher = {Online},
+      url = {https://rlhfbook.com}
+    }
+</pre>
   </section>
   <footer style="padding: 20px; text-align: center; margin-top: 2em;">
     <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-      <a href="https://github.com/natolambert/rlhf-book" target="_blank">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 40px; height: 40px;">
-      </a>
       <a href="https://arxiv.org/abs/2504.12501" target="_blank">
         <img src="assets/arxiv.svg" alt="arXiv" style="width: 40px; height: 40px;">
       </a>
-      <a href="https://www.manning.com/books/the-rlhf-book" target="_blank">
-        <img src="assets/manning.svg" alt="Manning" style="width: 40px; height: 40px;">
-      </a>
     </div>
-    <p>&copy; 2024-2026 Nathan Lambert &middot; <a href="https://rlhfbook.com" style="color: #888; text-decoration: none;">rlhfbook.com</a></p>
+    <p>&copy; 2026 Caleb Ziems, Dora Zhao, Diyi Yang &middot; <a href="https://rlhfbook.com" style="color: #888; text-decoration: none;">rlhfbook.com</a></p>
+    <p>Website template from <a href="https://rlhfbook.com" style="color: #888; text-decoration: none;">rlhfbook.com</a></p>
   </footer>  
 </body>
 </html>

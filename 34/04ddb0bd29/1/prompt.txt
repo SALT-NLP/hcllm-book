@@ -1,0 +1,25 @@
+Set up the chapters in @book/templates/nav.js to link to the chapters we have in @book/chapters/
+
+---
+
+The issue is that they are not at this URL and we are testing it locally for now
+
+---
+
+Now none of the links are working
+
+---
+
+There is no introduction.html though, it is @book/chapters/01-introduction.md
+
+---
+
+Running make html then serving build/html/ with an HTTP server (in which case /c/01-introduction.html should work)
+
+---
+
+It is a 404
+
+---
+
+This is built with the pandoc book template
